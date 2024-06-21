@@ -3,16 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="./script.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>컴포즈커피</title>
-    <!-- fontawesome -->
-    <script
-      defer
-      src="https://kit.fontawesome.com/bd0a8925a1.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <div id="wrapper">
@@ -23,78 +16,69 @@
               <img src="./img/logo.svg" alt="compose coffee logo" />
             </div>
             <ul class="gnb">
-              <li>
+              <li data-index="0">
                 <a href="">BRAND</a>
-                <div class="gnb_detail">
-                  <div class="gnb_detail_inner">
-                    <ul class="detail_list">
-                      <li><a href="">ABOUT US</a></li>
-                      <li><a href="">비터홀릭</a></li>
-                    </ul>
-                  </div>
-                </div>
               </li>
-              <li>
+              <li data-index="1">
                 <a href="">FRNACHISE</a>
-                <div class="gnb_detail">
-                  <div class="gnb_detail_inner">
-                    <ul class="detail_list">
-                      <li><a href="">국내 가맹문의</a></li>
-                      <li><a href="">인테리어</a></li>
-                      <li><a href="">해외가맹문의</a></li>
-                      <li><a href="">제휴 및 제안</a></li>
-                    </ul>
-                  </div>
-                </div>
               </li>
-              <li>
+              <li data-index="2">
                 <a href="">MENU</a>
-                <div class="gnb_detail">
-                  <div class="gnb_detail_inner">
-                    <ul class="detail_list">
-                      <li><a href="">시즌메뉴</a></li>
-                      <li><a href="">커피</a></li>
-                      <li><a href="">더치커피</a></li>
-                      <li><a href="">논커피 라떼</a></li>
-                      <li><a href="">주스</a></li>
-                      <li><a href="">스무디</a></li>
-                      <li><a href="">에이드</a></li>
-                      <li><a href="">티</a></li>
-                      <li><a href="">프라페</a></li>
-                      <li><a href="">밀크쉐이크</a></li>
-                      <li><a href="">사이드메뉴</a></li>
-                    </ul>
-                  </div>
-                </div>
               </li>
-              <li>
+              <li data-index="3">
                 <a href="">STORE</a>
-                <div class="gnb_detail">
-                  <div class="gnb_detail_inner">
-                    <ul class="detail_list">
-                      <li><a href="">매장찾기</a></li>
-                      <li><a href="">컴포즈 마켓</a></li>
-                      <li><a href="">고객의 소리</a></li>
-                    </ul>
-                  </div>
-                </div>
               </li>
-              <li>
+              <li data-index="4">
                 <a href="">NEWS</a>
-                <div class="gnb_detail">
-                  <div class="gnb_detail_inner">
-                    <ul class="detail_list">
-                      <li><a href="">공지사항</a></li>
-                      <li><a href="">NEWS</a></li>
-                      <li><a href="">EVENTS</a></li>
-                    </ul>
-                  </div>
-                </div>
               </li>
+              <div class="gnb_detail">
+                <div class="gnb_detail_inner">
+                  <ul class="detail_list" data-index="0">
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">비터홀릭</a></li>
+                  </ul>
+                  <ul class="detail_list" data-index="1">
+                    <li><a href="">국내 가맹문의</a></li>
+                    <li><a href="">인테리어</a></li>
+                    <li><a href="">해외가맹문의</a></li>
+                    <li><a href="">제휴 및 제안</a></li>
+                  </ul>
+                  <ul class="detail_list" data-index="2">
+                    <li><a href="">시즌메뉴</a></li>
+                    <li><a href="">커피</a></li>
+                    <li><a href="">더치커피</a></li>
+                    <li><a href="">논커피 라떼</a></li>
+                    <li><a href="">주스</a></li>
+                    <li><a href="">스무디</a></li>
+                    <li><a href="">에이드</a></li>
+                    <li><a href="">티</a></li>
+                    <li><a href="">프라페</a></li>
+                    <li><a href="">밀크쉐이크</a></li>
+                    <li><a href="">사이드메뉴</a></li>
+                  </ul>
+                  <ul class="detail_list" data-index="3">
+                    <li><a href="">매장찾기</a></li>
+                    <li><a href="">컴포즈 마켓</a></li>
+                    <li><a href="">고객의 소리</a></li>
+                  </ul>
+                  <ul class="detail_list" data-index="4">
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">EVENTS</a></li>
+                  </ul>
+                </div>
+              </div>
             </ul>
             <ul class="privacy_menu">
-              <li>
-                <img src="./img/ko.png" alt="KOREAN" />
+              <li class="language">
+                <div class="selected">
+                  <img src="./img/ko.png" alt="KOREAN" />
+                </div>
+                <div class="select_list">
+                  <img src="./img/en.png" alt="en" />
+                  <img src="./img/ja.png" alt="ja" />
+                  <img src="./img/cn.png" alt="cn" />
+                </div>
                 <span>
                   <i class="fa-solid fa-caret-down"></i>
                 </span>
@@ -109,7 +93,60 @@
                 <span></span>
                 <span></span>
               </div>
-              <div class="whole_menu_box"></div>
+              <div class="whole_menu_box">
+                <div class="whole_menu_inner">
+                  <ul class="menu_box">
+                    <li>
+                      <a href="">BRAND</a>
+                      <ul>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">버터홀릭</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">FRANCHISE</a>
+                      <ul>
+                        <li><a href="">국내 가맹문의</a></li>
+                        <li><a href="">인테리어</a></li>
+                        <li><a href="">해외가맹문의</a></li>
+                        <li><a href="">제휴 및 제안</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">MENU</a>
+                      <ul>
+                        <li><a href="">시즌메뉴</a></li>
+                        <li><a href="">커피</a></li>
+                        <li><a href="">더치커피</a></li>
+                        <li><a href="">논커피 라떼</a></li>
+                        <li><a href="">주스</a></li>
+                        <li><a href="">스무디</a></li>
+                        <li><a href="">에이드</a></li>
+                        <li><a href="">티</a></li>
+                        <li><a href="">프라페</a></li>
+                        <li><a href="">밀크쉐이크</a></li>
+                        <li><a href="">사이드메뉴</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">STORE</a>
+                      <ul>
+                        <li><a href="">매장찾기</a></li>
+                        <li><a href="">컴포즈 마켓</a></li>
+                        <li><a href="">고객의 소리</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">NEWS</a>
+                      <ul>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">NEWS</a></li>
+                        <li><a href="">EVENTS</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -126,70 +163,270 @@
           </ul>
         </section>
         <section class="history_sec">
+          <div class="history_title">
+            <h1>The History of Compose Coffee</h1>
+            <span>컴포즈커피 회사 연혁</span>
+          </div>
           <div class="history_box">
-            <ul class="year_btns">
-              <img
-                class="prev_btn"
-                src="./img/arrow_left.png"
-                alt="arrowLeftBtn"
-              />
-              <li>
-                <a class="on" href="">2023</a>
-                <div class="history_tabs">
-                  <div class="history_title">
-                    <h1>The History of Compose Coffee</h1>
-                    <span>컴포즈커피 회사 연혁</span>
+            <div class="history_show_place">
+              <div class="history_tabs active" data-year="2023">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2023.jpeg" alt="2023Img" />
                   </div>
-                  <div class="history_contents">
-                    <div class="history_img">
-                      <img src="./img/2023.jpeg" alt="2023Img" />
-                    </div>
-                    <div class="history_lists">
-                      <h3 class="year">2023</h3>
-                      <ul>
-                        <li>컴포즈커피 2450호점 OPEN 및 계약 완료</li>
-                        <li>제 14회 대한민국 국가 브랜드 대상 수상</li>
-                        <li>2023 매일경제 100대 프랜차이즈 2년 연속 선정</li>
-                        <li>2023 한국의 가장 사랑받는 브랜드 대상 수상</li>
-                        <li>
-                          제 24회 한국프랜차이즈산업발전유공 국무총리 표창 수상
-                        </li>
-                        <li>대한적십자 헌혈 유공 표창 수상</li>
-                        <li>부산경찰청 '보이스피싱 피해 방지' 홍보 협약</li>
-                        <li>대한적심자 X 컴포즈 헌혈캠페인 홍보 협약</li>
-                        <li>2000호점 오픈 기념 전국민 '럭키박스' 이벤트</li>
-                        <li>컴포즈커피 VIP멤버십 혜택 강화</li>
-                        <li>어린이날 보육원 무료봉사 & 커피트럭 제공</li>
-                        <li>서울 어린이병원 발달센터 커피트럭 제공</li>
-                        <li>
-                          고려대/연세대/경북보건대 '찾아가는 커피트럭' 제공
-                        </li>
-                        <li>서울 수궁동 '사랑의 연탄' 봉사활동</li>
-                        <li>부산 커피쇼 '장애인바리스타대회' 메인 스폰서</li>
-                        <li>2023 서울 마페쇼 메인 스폰서</li>
-                        <li>컴포즈커피 싱가포르 1호점 OPEN</li>
-                        <li>
-                          스테이씨 X 컴포즈 콜라보 '하늘소금라떼' 출시 프로모션
-                        </li>
-                        <li>
-                          에어부산 X 컴포즈 '틴프레시 에이드' 출시 프로모션
-                        </li>
-                        <li>홈카페 간편 커피 & 디카페인 원두 출시</li>
-                        <li>컴포즈커피 광고 모델 BTS '뷔' 전격 발탁</li>
-                      </ul>
-                    </div>
+                  <div class="history_lists">
+                    <h3 class="year">2023</h3>
+                    <ul>
+                      <li>컴포즈커피 2450호점 OPEN 및 계약 완료</li>
+                      <li>제 14회 대한민국 국가 브랜드 대상 수상</li>
+                      <li>2023 매일경제 100대 프랜차이즈 2년 연속 선정</li>
+                      <li>2023 한국의 가장 사랑받는 브랜드 대상 수상</li>
+                      <li>
+                        제 24회 한국프랜차이즈산업발전유공 국무총리 표창 수상
+                      </li>
+                      <li>대한적십자 헌혈 유공 표창 수상</li>
+                      <li>부산경찰청 '보이스피싱 피해 방지' 홍보 협약</li>
+                      <li>대한적심자 X 컴포즈 헌혈캠페인 홍보 협약</li>
+                      <li>2000호점 오픈 기념 전국민 '럭키박스' 이벤트</li>
+                      <li>컴포즈커피 VIP멤버십 혜택 강화</li>
+                      <li>어린이날 보육원 무료봉사 & 커피트럭 제공</li>
+                      <li>서울 어린이병원 발달센터 커피트럭 제공</li>
+                      <li>고려대/연세대/경북보건대 '찾아가는 커피트럭' 제공</li>
+                      <li>서울 수궁동 '사랑의 연탄' 봉사활동</li>
+                      <li>부산 커피쇼 '장애인바리스타대회' 메인 스폰서</li>
+                      <li>2023 서울 마페쇼 메인 스폰서</li>
+                      <li>컴포즈커피 싱가포르 1호점 OPEN</li>
+                      <li>
+                        스테이씨 X 컴포즈 콜라보 '하늘소금라떼' 출시 프로모션
+                      </li>
+                      <li>에어부산 X 컴포즈 '틴프레시 에이드' 출시 프로모션</li>
+                      <li>홈카페 간편 커피 & 디카페인 원두 출시</li>
+                      <li>컴포즈커피 광고 모델 BTS '뷔' 전격 발탁</li>
+                    </ul>
                   </div>
                 </div>
-              </li>
-              <li><a href="">2022</a></li>
-              <li><a href="">2021</a></li>
-              <li><a href="">2020</a></li>
-              <img
-                class="next_btn"
-                src="./img/arrow_right.png"
-                alt="arrowRightBtn"
-              />
-            </ul>
+              </div>
+              <div class="history_tabs" data-year="2022">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2022.jpeg" alt="2022Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2022</h3>
+                    <ul>
+                      <li>컴포즈커피 2000호점 OPEN 및 계약 완료</li>
+                      <li>전국 고객대상 설문조사 이벤트</li>
+                      <li>부산 독거노인 '사람의 연탄' 봉사활동</li>
+                      <li>컴포즈커피 우수매장 원두 지원</li>
+                      <li>중부 지사 설립</li>
+                      <li>국내 최대 'JM 스마트팩토리' 신설</li>
+                      <li>부산보훈청 '보훈문화 확산' 홍보 협약</li>
+                      <li>부산커피쇼 '장애인바리스타대회' 공식 후원</li>
+                      <li>2022 매일경제 '100대 프랜차이즈' 공식 후원</li>
+                      <li>컴포즈커피 App 프리퀀시 도입</li>
+                      <li>컴포즈커피 공식 모델 '정해인' 계약 체결</li>
+                      <li>제 27회 부산국제영화제 메이저 스폰서</li>
+                      <li>제4회 아시아 콘텐츠 어워즈 공동 주최</li>
+                      <li>2022 한국프랜차이즈대상 산업부장관 표창</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="history_tabs" data-year="2021">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2021.jpeg" alt="2021Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2021</h3>
+                    <ul>
+                      <li>컴포즈커피 1330호점 오픈 및 게약 완료</li>
+                      <li>전국 고객대상 설문조사 이벤트</li>
+                      <li>컴포즈커피 우수매장 원두 지원</li>
+                      <li>비터홀릭 '스페셜티 블렌딩' 출시</li>
+                      <li>컴포즈커피 전용 App 출시</li>
+                      <li>인스턴트 커피 '블랙엣지' 출시</li>
+                      <li>부산국세청X컴포즈 근로장려금 홍보 협약</li>
+                      <li>2021 한국소비자협회 '대한민국소비자대상'수상</li>
+                      <li>1000호점 오픈 기념 전국민 '럭키박스' 이벤트</li>
+                      <li>부산시청X컴포즈 가족가치확산 프로젝트</li>
+                      <li>행정안전부장관 표창장 수상</li>
+                      <li>공정거래위원회 '2021 착한프랜차이즈' 선정</li>
+                      <li>글로벌 국제학교 '후원의 집' 선정</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="history_tabs" data-year="2020">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2020.jpeg" alt="2020Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2020</h3>
+                    <ul>
+                      <li>컴포즈커피 800호점 오픈 및 계약 완료</li>
+                      <li>전국 고객대상 설문조사 이벤트</li>
+                      <li>제주지사 설립</li>
+                      <li>매장 인테리어 디자인 리뉴얼 (2020년 하반기)</li>
+                      <li>2020 전국 장애인 바리스타 대회 공식 후원</li>
+                      <li>공정거래위원회 '착한브랜드' 선정</li>
+                      <li>'6주년&환경보호' 텀블러 이벤트</li>
+                      <li>2020 한국소비자협회 '대한민국소비자대상' 수상</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="history_tabs" data-year="2019">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2019.jpeg" alt="2019Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2019</h3>
+                    <ul>
+                      <li>신사옥 기공식(2021년 상반기 완공)</li>
+                      <li>창원.김해지사 설립</li>
+                      <li>컴포즈커피 400호점 OPEN</li>
+                      <li>산업통상자원부장관 표창 수상</li>
+                      <li>지역사회발전 부산시장상 수상</li>
+                      <li>원두 출고량 월 50t 달성</li>
+                      <li>강원도 1호점 OPEN</li>
+                      <li>충북 1호점 OPEN</li>
+                      <li>신세계 프리미엄아울렛 공동 프로모션 진행</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="history_tabs" data-year="2018">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2018.jpeg" alt="2018Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2018</h3>
+                    <ul>
+                      <li>컴포즈커피 220호점 OPEN</li>
+                      <li>KFA 식품의약품안전처장상 수상</li>
+                      <li>이탈리아 명품 커피머신 '라포텐자' 브랜드 총판</li>
+                      <li>'PROBAT 60kg' 로스터기 추가 입고</li>
+                      <li>MBC라디오 '별이 빛나는 밤에 - 착한 브랜드' 선정</li>
+                      <li>부산 아쿠아리움 공동 프로모션 진행</li>
+                      <li>'포트나인' G-STAR 공동 프로모션 진행</li>
+                      <li>인천지사 설립</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="history_tabs" data-year="2017">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2017.jpeg" alt="2017Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2017</h3>
+                    <ul>
+                      <li>컴포즈커피 150호점 OPEN</li>
+                      <li>원두 출고량 원 2lt 달성</li>
+                      <li>초대형 로스터기 'PROBAT 60kg' 입고</li>
+                      <li>월 평균 매출 2500만원 달성</li>
+                      <li>광주/경북/대구 지사설립</li>
+                      <li>JTBC 창업 프로그램 '컴포즈커피' 방영</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="history_tabs" data-year="2016">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2016.jpeg" alt="2016Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2016</h3>
+                    <ul>
+                      <li>컴포즈 95호점 OPEN</li>
+                      <li>국내 최대 규모 본사 로스팅공장 설립</li>
+                      <li>물류.유통센터 '더젬코리아' 설립</li>
+                      <li>월 평균 매출 2100만원 달성</li>
+                      <li>서울/대구/인천/경북 지사 설립</li>
+                      <li>원두 출고량 월 15t 달성</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="history_tabs" data-year="2015">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2015.jpeg" alt="2015Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2015</h3>
+                    <ul>
+                      <li>컴포즈커피 41호점 OPEN</li>
+                      <li>원두 출고량 월 10t 달성</li>
+                      <li>서울 1호 직영점 OPEN</li>
+                      <li>연 매출 400% 성장</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="history_tabs" data-year="2014">
+                <div class="history_contents">
+                  <div class="history_img">
+                    <img src="./img/2014.jpeg" alt="2014Img" />
+                  </div>
+                  <div class="history_lists">
+                    <h3 class="year">2014</h3>
+                    <ul>
+                      <li>컴포즈커피 브랜드 런칭</li>
+                      <li>에스프레소 블렌딩 '비터홀릭' O.E.M</li>
+                      <li>원두 출고량 5t 달성</li>
+                      <li>컴포즈커피 10호점 OPEN</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="year_btn_slider">
+              <div class="year_btns">
+                <div data-year="2023" class="on">
+                  <a href="">2023</a>
+                </div>
+                <div data-year="2022">
+                  <a href="">2022</a>
+                </div>
+                <div data-year="2021">
+                  <a href="">2021</a>
+                </div>
+                <div data-year="2020">
+                  <a href="">2020</a>
+                </div>
+                <div data-year="2019">
+                  <a href="">2019</a>
+                </div>
+                <div data-year="2018">
+                  <a href="">2018</a>
+                </div>
+                <div data-year="2017">
+                  <a href="">2017</a>
+                </div>
+                <div data-year="2016">
+                  <a href="">2016</a>
+                </div>
+                <div data-year="2015">
+                  <a href="">2015</a>
+                </div>
+                <div data-year="2014">
+                  <a href="">2014</a>
+                </div>
+              </div>
+            </div>
+            <div class="prev_btn">
+              <img src="./img/arrow_left.png" alt="arrow_left" />
+            </div>
+            <div class="next_btn">
+              <img src="./img/arrow_right.png" alt="arrow_right" />
+            </div>
           </div>
         </section>
         <section class="ability_sec">
@@ -263,5 +500,13 @@
         </div>
       </footer>
     </div>
+    <!-- custom js -->
+    <script defer src="./script.js"></script>
+    <!-- fontawesome -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/bd0a8925a1.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
